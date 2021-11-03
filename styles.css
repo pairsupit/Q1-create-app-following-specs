@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+}
+.container{
+    display: flex;
+    height: 100Vh;
+}
+.box {
+    border: solid black 1px;
+    display: block;
+    height: auto;
+}
+.box1 {
+    width: 200px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.box2 {
+    min-width: 100px;
+    flex-grow: 1;
+}
+.box3 {
+    width: 300px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        overflow-x: scroll;
+    }
+}
